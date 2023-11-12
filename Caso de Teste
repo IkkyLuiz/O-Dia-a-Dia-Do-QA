@@ -1,0 +1,44 @@
+##Caso de Teste: Autenticação de Usuário
+
+**Descrição:**
+O objetivo deste teste é garantir que o processo de autenticação de usuários funcione corretamente no sistema. Isso é essencial para a segurança e experiência do usuário.
+
+**Pré-condições:**
+- O usuário possui credenciais válidas (nome de usuário e senha).
+
+**Passos:**
+1. Acesse a página de login do sistema.
+2. Insira um nome de usuário válido.
+3. Insira uma senha válida.
+4. Clique no botão de login.
+
+**Esperado:**
+- O sistema deve autenticar o usuário com sucesso.
+- O usuário deve ser redirecionado para a página principal após o login.
+- A mensagem de boas-vindas ou informações relevantes deve ser exibida.
+- O estado de autenticação do usuário deve ser refletido no sistema.
+
+**Cenários Alternativos:**
+- **Senha Incorreta:**
+  1. Insira um nome de usuário válido.
+  2. Insira uma senha inválida.
+  3. Clique no botão de login.
+  - *Esperado:* O sistema deve exibir uma mensagem de erro indicando que a senha é incorreta.
+
+- **Usuário Não Registrado:**
+  1. Insira um nome de usuário não registrado.
+  2. Insira uma senha válida.
+  3. Clique no botão de login.
+  - *Esperado:* O sistema deve exibir uma mensagem de erro indicando que o usuário não está registrado.
+
+- **Campos em Branco:**
+  1. Deixe o campo de nome de usuário em branco.
+  2. Deixe o campo de senha em branco.
+  3. Clique no botão de login.
+  - *Esperado:* O sistema deve exibir mensagens de erro indicando que os campos são obrigatórios.
+
+**Pós-condições:**
+- O sistema deve manter o estado de autenticação do usuário durante a sessão.
+- Caso necessário, o sistema deve fornecer opções para recuperação de senha ou criação de uma nova conta.
+
+Este caso de teste aborda cenários típicos que uma QA pode enfrentar ao verificar a funcionalidade de autenticação em um sistema.
